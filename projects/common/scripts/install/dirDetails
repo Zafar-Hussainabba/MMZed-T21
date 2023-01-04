@@ -1,0 +1,6 @@
+#These are the base directory that needs to be created
+mkdir bin code conf data logs out runtime scripts test
+mkdir data/json
+mkdir code/AttributeControllers code/jars code/src
+mkdir code/src/common code/src/AttributeControllers code/src/scripts code/src/interfaces
+

@@ -1,0 +1,58 @@
+{
+  "__FORM_NAME__" : "F2",
+  "__FORM__::F2::__FIELD_LIST__" : ["first_name", "last_name", "mobile_number", "email"],
+  "__FORM__::F2::__FIELD_LIST__::Mandatory" : ["first_name", "mobile_number", "email"],
+
+
+  "__FORM__::F2::__FIELD_VALUE__::first_name::type" : "text",
+  "__FORM__::F2::__FIELD_VALUE__::first_name::default" : "name",
+  "__FORM__::F2::__FIELD_VALUE__::first_name::minLength" : "1",
+  "__FORM__::F2::__FIELD_VALUE__::first_name::maxLength" : "20",
+  "__FORM__::F2::__FIELD_VALUE__::first_name::placeHolder" : "enter the first name",
+
+
+  "__FORM__::F2::__FIELD_VALUE__::first_name::__RULE_LIST__" : ["notEmpty", "isAlphabetic"],
+  "__FORM__::F2::__FIELD_VALUE__::first_name::__RULE__::notEmpty::error_code" : "firstName_EC_NE",
+  "__FORM__::F2::__FIELD_VALUE__::first_name::__RULE__::notEmpty::help_code" : "firstName_HC_NE",
+  "__FORM__::F2::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::error_code" : "firstName_EC_IA",
+  "__FORM__::F2::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::help_code" : "firstName_HC_IA",
+
+
+  "__FORM__::F2::__FIELD_VALUE__::last_name::type" : "text",
+  "__FORM__::F2::__FIELD_VALUE__::last_name::default" : "name",
+  "__FORM__::F2::__FIELD_VALUE__::last_name::minLength" : "1",
+  "__FORM__::F2::__FIELD_VALUE__::last_name::maxLength" : "20",
+  "__FORM__::F2::__FIELD_VALUE__::last_name::placeHolder" : "enter the first name",
+
+  "__FORM__::F2::__FIELD_VALUE__::last_name::__RULE_LIST__" : ["notEmpty", "isAlphabetic"],
+  "__FORM__::F2::__FIELD_VALUE__::last_name::__RULE__::notEmpty::error_code" : "lastName_EC_NE",
+  "__FORM__::F2::__FIELD_VALUE__::last_name::__RULE__::notEmpty::help_code" : "lastName_HC_NE",
+  "__FORM__::F2::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::error_code" : "lastName_EC_IA",
+  "__FORM__::F2::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::help_code" : "lastName_HC_IA",
+
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::type" : "text",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::default" : "name",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::minLength" : "1",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::maxLength" : "20",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::placeHolder" : "enter the mobile number",
+
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::__RULE_LIST__" : ["notEmpty", "isNumeric", "containsExpectedLength"],
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::__RULE__::notEmpty::error_code" : "mobileNumber_EC_NE",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::__RULE__::notEmpty::help_code" : "mobileNumber_HC_NE",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::__RULE__::isNumeric::error_code" : "mobileNumber_EC_IN",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::__RULE__::isNumeric::help_code" : "mobileNumber_HC_IN",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::error_code" : "mobileNumber_EC_CEL",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::help_code" : "mobileNumber_HC_CEL",
+
+
+  "__FORM__::F2::__FIELD_VALUE__::email::type" : "text",
+  "__FORM__::F2::__FIELD_VALUE__::email::default" : "name",
+  "__FORM__::F2::__FIELD_VALUE__::email::minLength" : "1",
+  "__FORM__::F2::__FIELD_VALUE__::email::maxLength" : "20",
+  "__FORM__::F2::__FIELD_VALUE__::email::placeHolder" : "enter the first email",
+
+
+  "__FORM__::F2::__FIELD_VALUE__::email::__RULE_LIST__" : ["containsExpectedFormat"],
+  "__FORM__::F2::__FIELD_VALUE__::email::__RULE__::containsExpectedFormat::error_code" : "email_EC_CEF",
+  "__FORM__::F2::__FIELD_VALUE__::email::__RULE__::containsExpectedFormat::help_code" : "email_HC_CEF"
+}

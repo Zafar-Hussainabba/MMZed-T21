@@ -1,0 +1,178 @@
+{
+        "__common__" : {
+        
+        },
+        "TCS_RH_NE.001" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Firstname, not empty condition failed"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "Not empty condition failed for firstname!!!"
+                    }
+                }
+            }
+        },
+        "TCS_RH_IA.001" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Firstname, isAlphabetic condition failed"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "isAlphabetic condition failed for firstname!!!"
+                    }
+                }
+            }
+        },
+        "TCS_RH_IA.002" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Firstname, isAlphabetic condition failed"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "isAlphabetic condition failed for firstname!!!"
+                    }
+                }
+            }
+        },
+        "TCS_RH_IN.001" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Mobile_Number, isNumeric condition failed"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "isNumeric condition failed for Mobile_Number!!!"
+                    }
+                }
+            }
+        },
+        "TCS_RH_IN.002" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Mobile_Number, isNumeric condition failed"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "isNumeric condition failed for Mobile_Number!!!"
+                    }
+                }
+            }
+        },
+        "TCS_RH_CEL.001" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Mobile_Number, Does not contain expected length!!!"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "Ecpected length not found for Mobile_Number!!!"
+                    }
+                }
+            }
+        },
+        "TCS_RH_CEL.002" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Mobile_Number, Does not contain expected length!!!"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "Ecpected length not found for Mobile_Number!!!"
+                    }
+                }
+            }
+        },
+        "TCS_RH_CEF.001" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Email, Does not contain expected format!!!"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "Ecpected format not found for Mobile_Number!!!"
+                    }
+                }
+            }
+        },
+        "TCS_RH_CEF.002" : {
+            "system" : {
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__messages__" : {
+                        "default" : "Email, Does not contain expected format!!!"
+                    }
+                }
+            },
+            "user" : {
+                "__key_sequence__" : ["u.01"],
+                "u.01" : {
+                    "__messages__" : {
+                        "default_message" : "Ecpected format not found for Mobile_Number!!!"
+                    }
+                }
+            }
+        },
+        "substitution_string.100.01" : {
+            "__default_substitute_string__" : "",
+            "system" : {
+                "__default_substitute_string__" : "Unknown system error occured!!!",
+                "__key_sequence__" : ["s.01"],
+                "s.01" : {
+                    "__message__" : "Substtute stirng not found!!!",
+                }
+            }
+        }
+}
+

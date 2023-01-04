@@ -1,0 +1,120 @@
+{
+	"__VALIDATION__" : {
+        "__COMMON__" : {
+            "default_not_empty_rule" : {
+                "notEmpty" : true,
+                "error_code" : "email.100.01" ,
+                "help_code" : "email.100.01"
+            },
+            "default_email_validation" : {
+                "input_type" : "text",
+                "__RULES__" : {
+                    "r.01" : {
+                        "notEmpty" : true,
+                        "error_code" : "email.100.01",
+                        "help_code" : "email.100.01"
+                    },
+                    "r.02" : {
+                        "containsExpectedFormat" : true,
+                        "error_code" : "email.100.01",
+                        "help_code" : "email.100.01"
+                    }
+                }
+            },
+            "default_firstName_and_email_validation_group" : {
+                "firstName" : {
+                    "input_type" : "text",
+                    "__RULES__" : {
+                        "r.01" : {
+                            "notEmpty" : true,
+                            "error_code" : "firstName.100.01",
+                            "help_code" : "firstName.100.01"
+                        },
+                        "r.02" : {
+                            "isAlphabetic" : true,
+                            "error_code" : "firstName.100.02",
+                            "help_code" : "firstName.100.02"
+                        }
+                    }
+                },
+                "email" : "__email__"
+            },
+            "__FORM__" : {
+                "F1" : {
+                    "__FIELD__" : {
+                        "first_name" : {
+                            "input" : "text",
+                            "__RULES__" : {
+                                "r.01" : {
+                                    "notEmpty" : true,
+                                    "error_code" : "firstName.100.01",
+                                    "help_code" : "firstName.100.01"
+                                },
+                                "r.02" : {
+                                    "isAlphabetic" : true,
+                                    "error_code" : "firstName.100.02",
+                                    "help_code" : "firstName.100.02"
+                                }
+                            }
+                        },
+                        "mobile_number" : {
+                            "input_type" : "number",
+                            "__RULES__" : {
+                                "r.01" : {
+                                    "notEmpty" : true,
+                                    "error_code" : "mobileNumber.100.01",
+                                    "help_code" : "mobileNumber.100.01"
+                                },
+                                "r.02" : {
+                                    "isNumeric" : true,
+                                    "error_code" : "mobileNumber.100.02",
+                                    "help_code" : "mobileNumber.100.02"
+                                },
+                                "r.03" : {
+                                    "containsExpectedLength" : true,
+                                    "error_code" : "mobileNumber.100.03",
+                                    "help_code" : "mobileNumber.100.03"
+                                }
+                            }
+                        },
+                        "email" : {
+                            "input_type" : "text",
+                            "__RULES__" : {
+                                "r.01" : {
+                                    "containsExpectedFormat" : true,
+                                    "error_code" : "email.100.01",
+                                    "help_code" : "email.100.01"
+                                }
+                            }
+                        }
+                    }
+                },
+                "F2" : {
+                    "__FIELD__" : {
+                        "first_name" : {
+                            "input_type" : "text",
+                            "__RULES__" : {
+                                "r.01" : {
+                                    "notEmpty" : true,
+                                    "error_code" : "firstName.100.01",
+                                    "help_code" : "firstName.100.01"
+                                },
+                                "r.02" : {
+                                    "isAlphabetic" : true,
+                                    "error_code" : "firstName.100.02",
+                                    "help_code" : "firstName.100.02"
+                                }
+                            }
+                        },
+                        "email" : "__default_email_validation__"
+                    }
+                },
+                "F3" : "__default_firstName_and_email_validation_group__"
+            },
+            "external_links" : [
+                    { "CSS" : "url for css" },
+                    { "JS" : "url for javaScript" }
+            ]
+		}
+    }
+}

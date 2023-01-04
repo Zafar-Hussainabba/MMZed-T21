@@ -1,0 +1,55 @@
+{
+	"MMZed" : {
+		"__SYSTEM__" :  {
+			"__GLOBAL_FINAL_ATTRIBUTES__": {
+				"__STATE__" :  " ",
+				"__GLOBALERRORCODE__" : " ",
+				"__PWD__": " ",
+				"__MODE__": " ",
+				"FILENAME" : " "
+			},
+			"__DEFAULT_ATTRIBUTES__" :  {
+				"__STATE__" :  " ",
+				"__GLOBALERRORCODE__" : " ",
+				"__PWD__": " ",
+				"__MODE__": " ",
+				"FILENAME" : " "
+			},
+			"__ENVIRONMENT_ATTRIBUTES__" :  {
+ 				"__PWD__": " ",
+				"__MODE__": " ",
+				"FILENAME" : " "
+			},
+			"__RUNTIME_ATTRIBUTES__" : {
+				"__STATE__" :  " ",
+				"__GLOBALERRORCODE__" : " ",
+				"__PWD__": " ",
+				"__MODE__": " ",
+				"FILENAME" : " "
+			},	
+			"__PARAMETER_ATTRIBUTES__": {
+				"__PWD__": " ",
+				"__MODE__": " ",
+				"FILENAME" : " "
+			},
+			"__CONFIG_FILE_ATTRIBUTES__":{
+				"__PWD__": " ",
+				"__MODE__": " ",
+				"FILENAME" : " "
+			}
+		},
+		"__APPLICATION__": "MMZed_APPLICATION.json",
+		"__API__": "MMZed_API.json",
+		"__FORMS__": "MMZed_FORM.json",
+		"__VALIDATION__": {
+            "default_file" : "/Users/zafarabba/MMZed-T21/projects/ValidationEngine/data/json/COMMON_FORM_VALIDATION.json",
+            "override_file" : "/Users/zafarabba/MMZed-T21/projects/ValidationEngine/data/json/FORM_VALIDATION.json"
+        },
+		"__ERROR__": "",
+		"__SUCCESS__": "",
+		"__NOTIFICATIONS__":   ""
+	}
+}
+
+
+

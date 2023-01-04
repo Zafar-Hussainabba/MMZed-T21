@@ -1,0 +1,8 @@
+{
+  "__FORM_NAME__" : "F2",
+  "__FORM__::F2::__FIELD_LIST__" : ["first_name", "last_name", "mobile_number", "email"],
+  "__FORM__::F2::__FIELD_VALUE__::first_name" : "",
+  "__FORM__::F2::__FIELD_VALUE__::last_name" : "1234",
+  "__FORM__::F2::__FIELD_VALUE__::mobile_number" : "abc",
+  "__FORM__::F2::__FIELD_VALUE__::email" : "@gmail.com"
+}

@@ -1,0 +1,291 @@
+[15 Jun 2021 12:10:20,287] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key not found!!!
+[15 Jun 2021 12:10:20,288] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key not found!!!
+[15 Jun 2021 12:10:20,288] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[15 Jun 2021 12:10:20,288] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[15 Jun 2021 12:10:20,288] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[15 Jun 2021 12:10:20,288] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[15 Jun 2021 12:10:20,289] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[15 Jun 2021 12:10:20,289] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[15 Jun 2021 12:10:20,296] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ ErrorEngineMap ], set successfully.
+[15 Jun 2021 12:10:20,298] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ PatternMap ], set successfully.
+[15 Jun 2021 12:10:20,298] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Loading the http input to a hashmap...
+[15 Jun 2021 12:10:20,299] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Getting API data from the end point...
+[15 Jun 2021 12:10:20,299] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initializing the api url...
+[15 Jun 2021 12:10:20,302] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The specified url is : [ http://localhost:8080/F1 ] 
+[15 Jun 2021 12:10:20,302] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initiating the http url connection...
+[15 Jun 2021 12:10:20,307] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Http url connection initiated.
+[15 Jun 2021 12:10:20,308] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting the request type...
+[15 Jun 2021 12:10:20,308] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The request type is : [ GET ] 
+[15 Jun 2021 12:10:20,308] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Connecting to the API...
+[15 Jun 2021 12:10:20,316] [main] TRACE code.src.Form.FormF1.Test_FormF1  - API connection established.
+[15 Jun 2021 12:10:20,316] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Getting the response code...
+[15 Jun 2021 12:10:20,324] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The response code is : [ 200 ] 
+[15 Jun 2021 12:10:20,324] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initializing the scanner...
+[15 Jun 2021 12:10:20,330] [main] TRACE code.src.Form.FormF1.Test_FormF1  - scanner initialized...
+[15 Jun 2021 12:10:20,331] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Writing all the JSON data into a string...
+[15 Jun 2021 12:10:20,335] [main] TRACE code.src.Form.FormF1.Test_FormF1  - All the JSON data is written into a string successfully.
+[15 Jun 2021 12:10:20,335] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Closing the scanner...
+[15 Jun 2021 12:10:20,335] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Scanner closed...
+[15 Jun 2021 12:10:20,335] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Parsing the string into a json object...
+[15 Jun 2021 12:10:20,337] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Json object obtained after parsing the string is : 
+ {"__FORM_NAME__":"F1","__FORM__::F1::__FIELD_VALUE__::first_name":"123","__FORM__::F1::__FIELD_LIST__":["first_name","last_name","mobile_number"],"__FORM__::F1::__FIELD_VALUE__::mobile_number":"abc","__FORM__::F1::__FIELD_VALUE__::last_name":""}
+[15 Jun 2021 12:10:20,337] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ FormF1Hashmap ], set successfully.
+[15 Jun 2021 12:10:20,337] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Http input is loaded to hashmap successfully.
+[15 Jun 2021 12:10:20,338] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Loading the definition for form F1...
+[15 Jun 2021 12:10:20,338] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ FormDefinitionF1 ], set successfully.
+[15 Jun 2021 12:10:20,339] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Definition for form F1 loaded successfully.
+[15 Jun 2021 12:10:20,339] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Checking whether expected fields have come in http input...
+[15 Jun 2021 12:10:20,339] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Checking whether mandatory fields have come in http input...
+[15 Jun 2021 12:10:20,339] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ first_name ] 
+[15 Jun 2021 12:10:20,340] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ validatorHash ] 
+[15 Jun 2021 12:10:20,340] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ inputString ], Value : [ 123 ] 
+[15 Jun 2021 12:10:20,340] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ rules ], Value : [ ["notEmpty","isAlphabetic"] ] 
+[15 Jun 2021 12:10:20,341] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[15 Jun 2021 12:10:20,341] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[15 Jun 2021 12:10:20,342] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::error_code ] in map : [ FormErrorsF1 ] 
+[15 Jun 2021 12:10:20,342] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::error_code ] is set successfully.
+[15 Jun 2021 12:10:20,343] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::help_code ] in map : [ FormHelpF1 ] 
+[15 Jun 2021 12:10:20,343] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::help_code ] is set successfully.
+[15 Jun 2021 12:10:20,344] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ first_name ] is...
+[15 Jun 2021 12:10:20,344] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[15 Jun 2021 12:10:20,344] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ isAlphabetic ], Value : [ false ] 
+[15 Jun 2021 12:10:20,344] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ true ] 
+[15 Jun 2021 12:10:20,349] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ first_name ], rule - [ isAlphabetic ]  is : [ firstName_EC_IA : Non-alphabetic character found for firstname field!!! ] 
+[15 Jun 2021 12:10:20,349] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ first_name ], rule - [ isAlphabetic ]  is : [ firstName_HC_IA : Only alphabetic characters are accepted for firstname field. ] 
+[15 Jun 2021 12:10:20,350] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ last_name ] 
+[15 Jun 2021 12:10:20,350] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ validatorHash ] 
+[15 Jun 2021 12:10:20,350] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ inputString ], Value : [  ] 
+[15 Jun 2021 12:10:20,350] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ rules ], Value : [ ["notEmpty","isAlphabetic"] ] 
+[15 Jun 2021 12:10:20,350] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[15 Jun 2021 12:10:20,350] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[15 Jun 2021 12:10:20,350] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::error_code ] in map : [ FormErrorsF1 ] 
+[15 Jun 2021 12:10:20,350] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::error_code ] is set successfully.
+[15 Jun 2021 12:10:20,351] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::help_code ] in map : [ FormHelpF1 ] 
+[15 Jun 2021 12:10:20,351] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::help_code ] is set successfully.
+[15 Jun 2021 12:10:20,351] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::notEmpty::error_code ] in map : [ FormErrorsF1 ] 
+[15 Jun 2021 12:10:20,351] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::notEmpty::error_code ] is set successfully.
+[15 Jun 2021 12:10:20,351] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::notEmpty::help_code ] in map : [ FormHelpF1 ] 
+[15 Jun 2021 12:10:20,351] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::notEmpty::help_code ] is set successfully.
+[15 Jun 2021 12:10:20,351] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ last_name ] is...
+[15 Jun 2021 12:10:20,351] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[15 Jun 2021 12:10:20,351] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ isAlphabetic ], Value : [ false ] 
+[15 Jun 2021 12:10:20,352] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ false ] 
+[15 Jun 2021 12:10:20,352] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ last_name ], rule - [ isAlphabetic ]  is : [ lastName_EC_IA : Non-alphabetic character found for lastname field!!! ] 
+[15 Jun 2021 12:10:20,352] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ last_name ], rule - [ isAlphabetic ]  is : [ lastName_HC_IA : Only alphabetic character are accepted for firstname field. ] 
+[15 Jun 2021 12:10:20,352] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ last_name ], rule - [ notEmpty ]  is : [ lastName_EC_NE : Lastname field is empty!!! ] 
+[15 Jun 2021 12:10:20,352] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ last_name ], rule - [ notEmpty ]  is : [ lastName_HC_NE : Lastname field should not be empty. ] 
+[15 Jun 2021 12:10:20,352] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ mobile_number ] 
+[15 Jun 2021 12:10:20,352] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ validatorHash ] 
+[15 Jun 2021 12:10:20,352] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ inputString ], Value : [ abc ] 
+[15 Jun 2021 12:10:20,353] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ rules ], Value : [ ["notEmpty","isNumeric","containsExpectedLength"] ] 
+[15 Jun 2021 12:10:20,353] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[15 Jun 2021 12:10:20,353] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[15 Jun 2021 12:10:20,353] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::isNumeric::error_code ] in map : [ FormErrorsF1 ] 
+[15 Jun 2021 12:10:20,354] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::isNumeric::error_code ] is set successfully.
+[15 Jun 2021 12:10:20,354] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::isNumeric::help_code ] in map : [ FormHelpF1 ] 
+[15 Jun 2021 12:10:20,354] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::isNumeric::help_code ] is set successfully.
+[15 Jun 2021 12:10:20,354] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::error_code ] in map : [ FormErrorsF1 ] 
+[15 Jun 2021 12:10:20,354] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::error_code ] is set successfully.
+[15 Jun 2021 12:10:20,354] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::help_code ] in map : [ FormHelpF1 ] 
+[15 Jun 2021 12:10:20,354] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::help_code ] is set successfully.
+[15 Jun 2021 12:10:20,354] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ mobile_number ] is...
+[15 Jun 2021 12:10:20,354] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[15 Jun 2021 12:10:20,354] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ isNumeric ], Value : [ false ] 
+[15 Jun 2021 12:10:20,355] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ true ] 
+[15 Jun 2021 12:10:20,355] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ containsExpectedLength ], Value : [ false ] 
+[15 Jun 2021 12:10:20,355] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ mobile_number ], rule - [ isNumeric ]  is : [ mobileNumber_EC_IN : Non-numeric character found for mobile number field!!! ] 
+[15 Jun 2021 12:10:20,355] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ mobile_number ], rule - [ isNumeric ]  is : [ mobileNumber_HC_IN : Only numeric characters are accepted for firstname field. ] 
+[15 Jun 2021 12:10:20,355] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ mobile_number ], rule - [ containsExpectedLength ]  is : [ mobileNumber_EC_CEL : mobile number field does not contain expected length!!! ] 
+[15 Jun 2021 12:10:20,355] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ mobile_number ], rule - [ containsExpectedLength ]  is : [ mobileNumber_HC_CEL : mobile number field should contain expected length!!! ] 
+[27 Jul 2021 16:50:37,962] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key not found!!!
+[27 Jul 2021 16:50:37,963] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key not found!!!
+[27 Jul 2021 16:50:37,964] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[27 Jul 2021 16:50:37,964] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[27 Jul 2021 16:50:37,964] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[27 Jul 2021 16:50:37,964] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[27 Jul 2021 16:50:37,964] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[27 Jul 2021 16:50:37,965] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[27 Jul 2021 16:50:37,973] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ ErrorEngineMap ], set successfully.
+[27 Jul 2021 16:50:37,976] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ PatternMap ], set successfully.
+[27 Jul 2021 16:50:37,977] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Loading the http input to a hashmap...
+[27 Jul 2021 16:50:37,977] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Getting API data from the end point...
+[27 Jul 2021 16:50:37,977] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initializing the api url...
+[27 Jul 2021 16:50:37,981] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The specified url is : [ http://localhost:8080/F1 ] 
+[27 Jul 2021 16:50:37,981] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initiating the http url connection...
+[27 Jul 2021 16:50:37,991] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Http url connection initiated.
+[27 Jul 2021 16:50:37,991] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting the request type...
+[27 Jul 2021 16:50:37,991] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The request type is : [ GET ] 
+[27 Jul 2021 16:50:37,991] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Connecting to the API...
+[29 Jul 2021 15:16:16,639] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key not found!!!
+[29 Jul 2021 15:16:16,640] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key not found!!!
+[29 Jul 2021 15:16:16,640] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:16:16,640] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:16:16,641] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:16:16,641] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:16:16,641] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:16:16,641] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:16:16,650] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ ErrorEngineMap ], set successfully.
+[29 Jul 2021 15:16:16,654] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ PatternMap ], set successfully.
+[29 Jul 2021 15:16:16,655] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Loading the http input to a hashmap...
+[29 Jul 2021 15:16:16,655] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Getting API data from the end point...
+[29 Jul 2021 15:16:16,655] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initializing the api url...
+[29 Jul 2021 15:16:16,661] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The specified url is : [ http://localhost:8080/F1 ] 
+[29 Jul 2021 15:16:16,661] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initiating the http url connection...
+[29 Jul 2021 15:16:16,670] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Http url connection initiated.
+[29 Jul 2021 15:16:16,670] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting the request type...
+[29 Jul 2021 15:16:16,670] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The request type is : [ GET ] 
+[29 Jul 2021 15:16:16,670] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Connecting to the API...
+[29 Jul 2021 15:16:16,681] [main] TRACE code.src.Form.FormF1.Test_FormF1  - API connection established.
+[29 Jul 2021 15:16:16,681] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Getting the response code...
+[29 Jul 2021 15:16:16,694] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The response code is : [ 200 ] 
+[29 Jul 2021 15:16:16,694] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initializing the scanner...
+[29 Jul 2021 15:16:16,700] [main] TRACE code.src.Form.FormF1.Test_FormF1  - scanner initialized...
+[29 Jul 2021 15:16:16,701] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Writing all the JSON data into a string...
+[29 Jul 2021 15:16:16,705] [main] TRACE code.src.Form.FormF1.Test_FormF1  - All the JSON data is written into a string successfully.
+[29 Jul 2021 15:16:16,705] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Closing the scanner...
+[29 Jul 2021 15:16:16,705] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Scanner closed...
+[29 Jul 2021 15:16:16,706] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Parsing the string into a json object...
+[29 Jul 2021 15:16:16,707] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Json object obtained after parsing the string is : 
+ {"__FORM_NAME__":"F1","__FORM__::F1::__FIELD_VALUE__::first_name":"zafar","__FORM__::F1::__FIELD_LIST__":["first_name","last_name","mobile_number"],"__FORM__::F1::__FIELD_VALUE__::mobile_number":"9980778909","__FORM__::F1::__FIELD_VALUE__::last_name":"Abba"}
+[29 Jul 2021 15:16:16,707] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ FormF1Hashmap ], set successfully.
+[29 Jul 2021 15:16:16,708] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Http input is loaded to hashmap successfully.
+[29 Jul 2021 15:16:16,708] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Loading the definition for form F1...
+[29 Jul 2021 15:16:16,709] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ FormDefinitionF1 ], set successfully.
+[29 Jul 2021 15:16:16,710] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Definition for form F1 loaded successfully.
+[29 Jul 2021 15:16:16,710] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Checking whether expected fields have come in http input...
+[29 Jul 2021 15:16:16,710] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Checking whether mandatory fields have come in http input...
+[29 Jul 2021 15:16:16,710] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ first_name ] 
+[29 Jul 2021 15:16:16,711] [main] TRACE methods.ReusableMethods  - Printing the value of hashmap : [ java.util.HashMap ] 
+[29 Jul 2021 15:16:16,711] [main] INFO  methods.ReusableMethods  - Key : [ Mode ], Value : [ EXIT_ON_FIRST_ERROR ] 
+[29 Jul 2021 15:16:16,711] [main] INFO  methods.ReusableMethods  - Key : [ inputString ], Value : [ zafar ] 
+[29 Jul 2021 15:16:16,711] [main] INFO  methods.ReusableMethods  - Key : [ rules ], Value : [ ["notEmpty","isAlphabetic"] ] 
+[29 Jul 2021 15:16:16,712] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[29 Jul 2021 15:16:16,712] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[29 Jul 2021 15:16:16,713] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::error_code ] in map : [ FormErrorsF1 ] 
+[29 Jul 2021 15:16:16,713] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::error_code ] is set successfully.
+[29 Jul 2021 15:16:16,714] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::help_code ] in map : [ FormHelpF1 ] 
+[29 Jul 2021 15:16:16,714] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::help_code ] is set successfully.
+[29 Jul 2021 15:16:16,714] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ first_name ] is...
+[29 Jul 2021 15:16:16,714] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[29 Jul 2021 15:16:16,715] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ isAlphabetic ], Value : [ false ] 
+[29 Jul 2021 15:16:16,715] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ true ] 
+[29 Jul 2021 15:16:16,720] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ first_name ], rule - [ isAlphabetic ]  is : [ firstName_EC_IA ] 
+[29 Jul 2021 15:16:16,721] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ first_name ], rule - [ isAlphabetic ]  is : [ firstName_HC_IA ] 
+[29 Jul 2021 15:16:16,721] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ last_name ] 
+[29 Jul 2021 15:16:16,721] [main] TRACE methods.ReusableMethods  - Printing the value of hashmap : [ java.util.HashMap ] 
+[29 Jul 2021 15:16:16,721] [main] INFO  methods.ReusableMethods  - Key : [ Mode ], Value : [ EXIT_ON_FIRST_ERROR ] 
+[29 Jul 2021 15:16:16,721] [main] INFO  methods.ReusableMethods  - Key : [ inputString ], Value : [ Abba ] 
+[29 Jul 2021 15:16:16,721] [main] INFO  methods.ReusableMethods  - Key : [ rules ], Value : [ ["notEmpty","isAlphabetic"] ] 
+[29 Jul 2021 15:16:16,721] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[29 Jul 2021 15:16:16,722] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[29 Jul 2021 15:16:16,722] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::error_code ] in map : [ FormErrorsF1 ] 
+[29 Jul 2021 15:16:16,722] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::error_code ] is set successfully.
+[29 Jul 2021 15:16:16,722] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::help_code ] in map : [ FormHelpF1 ] 
+[29 Jul 2021 15:16:16,722] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::isAlphabetic::help_code ] is set successfully.
+[29 Jul 2021 15:16:16,722] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ last_name ] is...
+[29 Jul 2021 15:16:16,723] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[29 Jul 2021 15:16:16,723] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ isAlphabetic ], Value : [ false ] 
+[29 Jul 2021 15:16:16,723] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ true ] 
+[29 Jul 2021 15:16:16,723] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ last_name ], rule - [ isAlphabetic ]  is : [ lastName_EC_IA ] 
+[29 Jul 2021 15:16:16,723] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ last_name ], rule - [ isAlphabetic ]  is : [ lastName_HC_IA ] 
+[29 Jul 2021 15:16:16,723] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ mobile_number ] 
+[29 Jul 2021 15:16:16,723] [main] TRACE methods.ReusableMethods  - Printing the value of hashmap : [ java.util.HashMap ] 
+[29 Jul 2021 15:16:16,723] [main] INFO  methods.ReusableMethods  - Key : [ Mode ], Value : [ EXIT_ON_FIRST_ERROR ] 
+[29 Jul 2021 15:16:16,723] [main] INFO  methods.ReusableMethods  - Key : [ inputString ], Value : [ 9980778909 ] 
+[29 Jul 2021 15:16:16,724] [main] INFO  methods.ReusableMethods  - Key : [ rules ], Value : [ ["notEmpty","isNumeric","containsExpectedLength"] ] 
+[29 Jul 2021 15:16:16,724] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[29 Jul 2021 15:16:16,724] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[29 Jul 2021 15:16:16,724] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ mobile_number ] is...
+[29 Jul 2021 15:16:16,724] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[29 Jul 2021 15:16:16,724] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ isNumeric ], Value : [ true ] 
+[29 Jul 2021 15:16:16,725] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ true ] 
+[29 Jul 2021 15:16:16,725] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ containsExpectedLength ], Value : [ true ] 
+[29 Jul 2021 15:17:27,301] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key not found!!!
+[29 Jul 2021 15:17:27,302] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key not found!!!
+[29 Jul 2021 15:17:27,303] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:17:27,303] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:17:27,303] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:17:27,303] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:17:27,303] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:17:27,304] [main] ERROR code.src.BaseAttributes.exceptions.SystemErrors  - Key already exist!!!
+[29 Jul 2021 15:17:27,309] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ ErrorEngineMap ], set successfully.
+[29 Jul 2021 15:17:27,312] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ PatternMap ], set successfully.
+[29 Jul 2021 15:17:27,312] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Loading the http input to a hashmap...
+[29 Jul 2021 15:17:27,312] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Getting API data from the end point...
+[29 Jul 2021 15:17:27,312] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initializing the api url...
+[29 Jul 2021 15:17:27,315] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The specified url is : [ http://localhost:8080/F1 ] 
+[29 Jul 2021 15:17:27,315] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initiating the http url connection...
+[29 Jul 2021 15:17:27,321] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Http url connection initiated.
+[29 Jul 2021 15:17:27,321] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting the request type...
+[29 Jul 2021 15:17:27,322] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The request type is : [ GET ] 
+[29 Jul 2021 15:17:27,322] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Connecting to the API...
+[29 Jul 2021 15:17:27,330] [main] TRACE code.src.Form.FormF1.Test_FormF1  - API connection established.
+[29 Jul 2021 15:17:27,330] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Getting the response code...
+[29 Jul 2021 15:17:27,337] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The response code is : [ 200 ] 
+[29 Jul 2021 15:17:27,338] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Initializing the scanner...
+[29 Jul 2021 15:17:27,347] [main] TRACE code.src.Form.FormF1.Test_FormF1  - scanner initialized...
+[29 Jul 2021 15:17:27,347] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Writing all the JSON data into a string...
+[29 Jul 2021 15:17:27,354] [main] TRACE code.src.Form.FormF1.Test_FormF1  - All the JSON data is written into a string successfully.
+[29 Jul 2021 15:17:27,354] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Closing the scanner...
+[29 Jul 2021 15:17:27,354] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Scanner closed...
+[29 Jul 2021 15:17:27,354] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Parsing the string into a json object...
+[29 Jul 2021 15:17:27,356] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Json object obtained after parsing the string is : 
+ {"__FORM_NAME__":"F1","__FORM__::F1::__FIELD_VALUE__::first_name":"123","__FORM__::F1::__FIELD_LIST__":["first_name","last_name","mobile_number"],"__FORM__::F1::__FIELD_VALUE__::mobile_number":"1234567890988","__FORM__::F1::__FIELD_VALUE__::last_name":""}
+[29 Jul 2021 15:17:27,356] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ FormF1Hashmap ], set successfully.
+[29 Jul 2021 15:17:27,356] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Http input is loaded to hashmap successfully.
+[29 Jul 2021 15:17:27,357] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Loading the definition for form F1...
+[29 Jul 2021 15:17:27,358] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Map : [ FormDefinitionF1 ], set successfully.
+[29 Jul 2021 15:17:27,358] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Definition for form F1 loaded successfully.
+[29 Jul 2021 15:17:27,358] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Checking whether expected fields have come in http input...
+[29 Jul 2021 15:17:27,359] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Checking whether mandatory fields have come in http input...
+[29 Jul 2021 15:17:27,359] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ first_name ] 
+[29 Jul 2021 15:17:27,360] [main] TRACE methods.ReusableMethods  - Printing the value of hashmap : [ java.util.HashMap ] 
+[29 Jul 2021 15:17:27,360] [main] INFO  methods.ReusableMethods  - Key : [ Mode ], Value : [ EXIT_ON_FIRST_ERROR ] 
+[29 Jul 2021 15:17:27,360] [main] INFO  methods.ReusableMethods  - Key : [ inputString ], Value : [ 123 ] 
+[29 Jul 2021 15:17:27,360] [main] INFO  methods.ReusableMethods  - Key : [ rules ], Value : [ ["notEmpty","isAlphabetic"] ] 
+[29 Jul 2021 15:17:27,361] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[29 Jul 2021 15:17:27,361] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[29 Jul 2021 15:17:27,362] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::error_code ] in map : [ FormErrorsF1 ] 
+[29 Jul 2021 15:17:27,363] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::error_code ] is set successfully.
+[29 Jul 2021 15:17:27,363] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::help_code ] in map : [ FormHelpF1 ] 
+[29 Jul 2021 15:17:27,363] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::first_name::__RULE__::isAlphabetic::help_code ] is set successfully.
+[29 Jul 2021 15:17:27,364] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ first_name ] is...
+[29 Jul 2021 15:17:27,364] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[29 Jul 2021 15:17:27,364] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ isAlphabetic ], Value : [ false ] 
+[29 Jul 2021 15:17:27,365] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ true ] 
+[29 Jul 2021 15:17:27,372] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ first_name ], rule - [ isAlphabetic ]  is : [ firstName_EC_IA ] 
+[29 Jul 2021 15:17:27,372] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ first_name ], rule - [ isAlphabetic ]  is : [ firstName_HC_IA ] 
+[29 Jul 2021 15:17:27,373] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ last_name ] 
+[29 Jul 2021 15:17:27,373] [main] TRACE methods.ReusableMethods  - Printing the value of hashmap : [ java.util.HashMap ] 
+[29 Jul 2021 15:17:27,373] [main] INFO  methods.ReusableMethods  - Key : [ Mode ], Value : [ EXIT_ON_FIRST_ERROR ] 
+[29 Jul 2021 15:17:27,373] [main] INFO  methods.ReusableMethods  - Key : [ inputString ], Value : [  ] 
+[29 Jul 2021 15:17:27,373] [main] INFO  methods.ReusableMethods  - Key : [ rules ], Value : [ ["notEmpty","isAlphabetic"] ] 
+[29 Jul 2021 15:17:27,373] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[29 Jul 2021 15:17:27,374] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[29 Jul 2021 15:17:27,374] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::notEmpty::error_code ] in map : [ FormErrorsF1 ] 
+[29 Jul 2021 15:17:27,374] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::notEmpty::error_code ] is set successfully.
+[29 Jul 2021 15:17:27,374] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::notEmpty::help_code ] in map : [ FormHelpF1 ] 
+[29 Jul 2021 15:17:27,374] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::last_name::__RULE__::notEmpty::help_code ] is set successfully.
+[29 Jul 2021 15:17:27,375] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ last_name ] is...
+[29 Jul 2021 15:17:27,375] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[29 Jul 2021 15:17:27,375] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ false ] 
+[29 Jul 2021 15:17:27,375] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ last_name ], rule - [ notEmpty ]  is : [ lastName_EC_NE ] 
+[29 Jul 2021 15:17:27,375] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ last_name ], rule - [ notEmpty ]  is : [ lastName_HC_NE ] 
+[29 Jul 2021 15:17:27,375] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating field : [ mobile_number ] 
+[29 Jul 2021 15:17:27,375] [main] TRACE methods.ReusableMethods  - Printing the value of hashmap : [ java.util.HashMap ] 
+[29 Jul 2021 15:17:27,376] [main] INFO  methods.ReusableMethods  - Key : [ Mode ], Value : [ EXIT_ON_FIRST_ERROR ] 
+[29 Jul 2021 15:17:27,376] [main] INFO  methods.ReusableMethods  - Key : [ inputString ], Value : [ 1234567890988 ] 
+[29 Jul 2021 15:17:27,376] [main] INFO  methods.ReusableMethods  - Key : [ rules ], Value : [ ["notEmpty","isNumeric","containsExpectedLength"] ] 
+[29 Jul 2021 15:17:27,376] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the input string for given rules specified...
+[29 Jul 2021 15:17:27,376] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Validating the string against the pattern specified for the rule...
+[29 Jul 2021 15:17:27,377] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::error_code ] in map : [ FormErrorsF1 ] 
+[29 Jul 2021 15:17:27,377] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::error_code ] is set successfully.
+[29 Jul 2021 15:17:27,377] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Setting a new key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::help_code ] in map : [ FormHelpF1 ] 
+[29 Jul 2021 15:17:27,377] [main] INFO  code.src.Form.FormF1.Test_FormF1  - The key : [ __FORM__::F1::__FIELD_VALUE__::mobile_number::__RULE__::containsExpectedLength::help_code ] is set successfully.
+[29 Jul 2021 15:17:27,378] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Validation result for field : [ mobile_number ] is...
+[29 Jul 2021 15:17:27,378] [main] TRACE code.src.Form.FormF1.Test_FormF1  - Printing the values of hashmap : [ FormValidationResultMap_F1 ] 
+[29 Jul 2021 15:17:27,378] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ isNumeric ], Value : [ true ] 
+[29 Jul 2021 15:17:27,378] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ notEmpty ], Value : [ true ] 
+[29 Jul 2021 15:17:27,378] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Key : [ containsExpectedLength ], Value : [ false ] 
+[29 Jul 2021 15:17:27,378] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Error code for field - [ mobile_number ], rule - [ containsExpectedLength ]  is : [ mobileNumber_EC_CEL ] 
+[29 Jul 2021 15:17:27,378] [main] INFO  code.src.Form.FormF1.Test_FormF1  - Help code for field - [ mobile_number ], rule - [ containsExpectedLength ]  is : [ mobileNumber_HC_CEL ] 

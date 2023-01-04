@@ -1,0 +1,6 @@
+{
+  "-1" : "Key not found!!!",
+  "-2" : "Key already exist!!!",
+  "-11" : "expected field not found!!!",
+  "-12" : "mandatory key not found!!!"
+}

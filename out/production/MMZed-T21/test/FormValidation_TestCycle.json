@@ -1,0 +1,21 @@
+{
+  "__TEST_CYCLE__" : {
+    "__EXIT_ON_SINGLE_ERROR__" : "false",
+    "__RUN_AT_SUITE_LEVEL__" : "true",
+    "__SKIP_TEST_SUITE__" : {
+      "TS.001" : 0
+    },
+    "__TEST_SUITE_SEQUENCE__" : [ ],
+    "__TEST_SUITE_JSON_REFERENCE__" : {
+      "COMMON_TEST_SUITE_FILE" : "FormValidation_TestSuite_Common.json",
+      "OVERRIDE_TEST_SUITE_FILE" : "FormValidation_TestSuite.json"
+    },
+    "__SKIP_TEST_CASE__" : { },
+    "__TEST_CASE_SEQUENCE__" : [ ],
+    "__TEST_CASES_JSON_REFERENCE__" : {
+      "COMMON_TEST_CASE_FILE" : "FormValidation_TestCase_Common.json",
+      "OVERRIDE_TEST_CASE_FILE" : "FormValidation_TestCase.json"
+    }
+  }
+}
+

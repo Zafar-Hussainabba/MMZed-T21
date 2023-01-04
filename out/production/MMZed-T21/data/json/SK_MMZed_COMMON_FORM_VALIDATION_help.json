@@ -1,0 +1,81 @@
+{
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR_LIST__" : ["firstName_HC_NE", "firstName_HC_IA", "firstName_HC_CEL", "middleName_HC_NE", "middleName_HC_IA", "lastName_HC_NE", "lastName_HC_IA", "mobileNumber_HC_NE", "mobileNumber_HC_IN", "mobileNumber_HC_CEL", "email_HC_CEF", "postalAddress_HC_NE", "postalAddress_HC_IWEL"],
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_NE::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_NE::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_NE::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "First name, Not Empty condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_NE::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_NE::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The first name field is empty!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_IA::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_IA::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_IA::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "First name, isAlphabetic condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_IA::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_IA::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The first name field contains non alphabetic characters!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_CEL::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_CEL::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_CEL::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "First name, containsExpHCtedLength condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_CEL::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::firstName_HC_CEL::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The first name field does not contain expHCted length!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_NE::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_NE::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_NE::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Middle name, Not Empty condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_NE::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_NE::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The middle name field is empty!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_IA::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_IA::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_IA::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Middle name, isAlphabetic condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_IA::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::middleName_HC_IA::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The middle name field contains non alphabetic characters!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_NE::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_NE::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_NE::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Last name, Not Empty condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_NE::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_NE::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The last name field is empty!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_IA::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_IA::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_IA::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Last name, isAlphabetic condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_IA::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::lastName_HC_IA::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The last name field contains non alphabetic characters!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_NE::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_NE::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_NE::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Mobile Number, Not Empty condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_NE::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_NE::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The mobile number field is empty!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_IN::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_IN::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_IN::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Mobile Number, isNumeric condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_IN::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_IN::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The mobile number field contains non numeric characters!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_CEL::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_CEL::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_CEL::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Mobile Number, containsExpHCtedLength condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_CEL::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::mobileNumber_HC_CEL::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The mobile number field does not contain expHCted length!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::email_HC_CEF::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::email_HC_CEF::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::email_HC_CEF::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Email, containsExpHCtedFormat condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::email_HC_CEF::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::email_HC_CEF::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The email field does not contain expHCted format!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_NE::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_NE::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_NE::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Postal Address, Not Empty condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_NE::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_NE::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The postal address field is empty!!!",
+
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_IWEL::__ERROR_TYPES__" : ["system", "user"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_IWEL::__ERROR_TYPE__::system::__ERROR_IDS__" : ["s.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_IWEL::__ERROR_TYPE__::system::__ERROR_ID__::s.01::message" : "Postal Address, isWithinExpHCtedLength condition failed!!!",
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_IWEL::__ERROR_TYPE__::user::__ERROR_IDS__" : ["u.01"],
+  "__FORM_VALIDATION_ERROR__::__COMMON__::__ERROR__::postalAddress_HC_IWEL::__ERROR_TYPE__::user::__ERROR_ID__::s.01::message" : "The postal address is not within the expHCted length!!!"
+}

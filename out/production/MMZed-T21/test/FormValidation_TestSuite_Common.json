@@ -1,0 +1,89 @@
+{
+  "__TEST_SUITE__": {
+    "__COMMON__": {
+      "TS.001" : {
+        "DESCRIPTION" : "Testing for form F1's firstName, mobileNumber and email fields.",
+        "__SKIP_FORM__" : {
+        },
+        "__SKIP_FIELDS__" : {
+        },
+        "__SKIP_RULES__" : {
+
+        },
+        "__TEST_ONLY_SUNNY_SCENARIO__" : "false",
+        "__TEST_ONLY_RAINY_SCENARIO__" : "false",
+        "__SKIP_SUNNY_TEST_CASES__" : {
+
+        },
+        "__SKIP_RAINY_TEST_CASES__" : {
+
+        },
+        "__SUNNY_TEST_CASE_EXECUTE_SEQUENCE__" : [ "--sequence of sunny test cases in FormValidation_TestCase_Common.json or FormValidation_TestCase.json file" ],
+        "__RAINY_TEST_CASE_EXECUTE_SEQUENCE__" : [ "--sequence of rainy test cases in FormValidation_TestCase_Common.json or FormValidation_TestCase.json file" ],
+        "__TEST_CASES_JSON_REFERENCE__" : {
+          "COMMON_TEST_CASE_FILE" : "FormValidation_TestCase_Common.json",
+          "OVERRIDE_TEST_CASE_FILE" : "FormValidation_TestCase.json"
+        }
+      },
+      "TS.002" : {
+        "DESCRIPTION" : "Testing for firstname field's notEmpty and isAlphabetic conditions.",
+        "__SKIP_FORM__" : {
+          "F1" : "false"
+        },
+        "__SKIP_FIELDS__" : {
+          "FIRST_NAME" : "false",
+          "MOBILE_NUMBER" : "false",
+          "EMAIL" : "false"
+        },
+        "__SKIP_RULES__" : {
+
+        },
+        "__TEST_ONLY_SUNNY_SCENARIO__" : "false",
+        "__TEST_ONLY_RAINY_SCENARIO__" : "false",
+        "__SKIP_SUNNY_TEST_CASES__" : {
+          "TCS_S_NE.002" : 0
+        },
+        "__SKIP_RAINY_TEST_CASES__" : {
+          "TCS_R_IA.002" : 0
+        },
+        "__SUNNY_TEST_CASE_EXECUTE_SEQUENCE__" : [ "TCS_S_NE.001", "TCS_S_NE.002", "TCS_S_NE.003", "TCS_S_IA.001", "TCS_S_IA.002", "TCS_S_IA.003" ],
+        "__RAINY_TEST_CASE_EXECUTE_SEQUENCE__" : [ "TCS_R_NE.001", "TCS_R_IA.001", "TCS_R_IA.002" ],
+        "FORM" : {
+          "F1" : {
+            "FIELD" : {
+              "FIRSTNAME" : {
+                "__RULE__" : {
+                  "R.001" : {
+                    "notEmpty" : {
+                      "__SUNNY__" : {
+                        "TCS_S_NE.001": 0,
+                        "TCS_S_NE.002": 0,
+                        "TCS_S_NE.003": 0
+                      },
+                      "__RAINY__" : {
+                        "TCS_R_NE.001": 0
+                      }
+                    }
+                  },
+                  "R.002" : {
+                    "isAlphabetic" : {
+                      "__SUNNY__" : {
+                        "TCS_S_IA.001" : 0,
+                        "TCS_S_IA.002" : 0,
+                        "TCS_S_IA.003" : 0
+                      },
+                      "__RAINY__" : {
+                        "TCS_R_IA.001" : 0,
+                        "TCS_R_IA.002" : 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+echo $PRG_HOME

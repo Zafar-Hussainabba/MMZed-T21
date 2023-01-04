@@ -1,0 +1,105 @@
+{
+        "__common__" : {
+            "default_notEmpty_help" : {
+                "system" : {
+                    "__key_sequence__" : ["s.01"],
+                    "s.01" : {
+                        "__messages__" : {
+                            "default" : "Field should not be empty."
+                        }
+                    }
+                },
+                "user" : {
+                    "__key_sequence__" : ["u.01"],
+                    "u.01" : {
+                        "__messages__" : {
+                            "default" : "Field should not be empty."
+                        }
+                    }
+                }
+            }
+            "firstName.100.01" : "__default_notEmpty_help__",
+            "firstName.100.02" : {
+                "system" : {
+                    "__key_sequence__" : ["s.01"],
+                    "s.01" : {
+                        "__messages__" : {
+                            "default" : "Field should only contain alphabetic characters."
+                        }
+                    }
+                },
+                "user" : {
+                    "__key_sequence__" : ["u.01"],
+                    "u.01" : {
+                        "__messages__" : {
+                            "default" : "Field should only contain alphabetic characters."
+                        }
+                    }
+                }
+            },
+            "mobileNumber.100.01" : "__default_notEmpty_error__",
+            "mobileNumber.100.02" : {
+                "system" : {
+                    "__key_sequence__" : ["s.01"],
+                    "s.01" : {
+                        "__messages__" : {
+                            "default" : "Field should only contain numeric characters."
+                        }
+                    }
+                },
+                "user" : {
+                    "__key_sequence__" : ["u.01"],
+                    "u.01" : {
+                        "__messages__" : {
+                            "default" : "Field should only contain numeric characters."
+                        }
+                    }
+                }
+            },
+            "mobileNumber.100.03" : {
+                "system" : {
+                    "__key_sequence__" : ["s.01"],
+                    "s.01" : {
+                        "__messages__" : {
+                            "default" : "Field should contain expected length."
+                        }
+                    }
+                },
+                "user" : {
+                    "__key_sequence__" : ["u.01"],
+                    "u.01" : {
+                        "__messages__" : {
+                            "default" : "Field should contain expected length."
+                        }
+                    }
+                }
+            },
+            "email.100.01" : {
+                "system" : {
+                    "__key_sequence__" : ["s.01"],
+                    "s.01" : {
+                        "__messages__" : {
+                            "default" : "Field should contain expected format."
+                        }
+                    }
+                },
+                "user" : {
+                    "__key_sequence__" : ["u.01"],
+                    "u.01" : {
+                        "__messages__" : {
+                            "default" : "Field should contain expected format."
+                        }
+                    }
+                }
+            },
+            "substitution_string.100.01" : {
+                "system" : {
+                    "__key_sequence__" : ["s.01"],
+                    "s.01" : {
+                        "__message__" : "Substtute stirng not found!!!",
+                    }
+                }
+            }
+        }
+}
+

@@ -1,0 +1,145 @@
+
+package code.src.JWT;
+
+import MMZed_Errors.Test_MMZed_ErrorEngine;
+import com.google.gson.JsonSyntaxException;
+import org.apache.log4j.LogManager;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import java.nio.charset.StandardCharsets;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.Base64;
+import java.util.List;
+import java.util.UUID;
+import org.json.simple.parser.ParseException;
+
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class JWT {
+    public static final org.apache.log4j.Logger logger = LogManager.getLogger( JWT.class );
+    private static final String SECRET_KEY = "FREE_MASON"; //@TODO Add Signature here
+    private static final char[] HEX_ARRAY = "0123456789ABCDEF".toCharArray();
+    private static final String ISSUER = "mason.metamug.net";
+    private static final String JWT_HEADER = "{\"alg\":\"HS256\",\"typ\":\"JWT\"}";
+    private JSONObject payload = new JSONObject();
+    private String signature;
+    private String encodedHeader;
+    private JSONParser parser = new JSONParser();
+
+    private JWT() throws ParseException {
+        encodedHeader = encode((JSONObject) parser.parse(JWT_HEADER));
+    }
+
+    public JWT(JSONObject payload) throws ParseException {
+        this(payload.get("sub").toString(), (JSONArray) payload.get("aud"), (Long) payload.get("exp"));
+    }
+
+    public JWT(String sub, JSONArray aud, long expires) throws ParseException {
+        this();
+        payload.put("sub", sub);
+        payload.put("aud", aud);
+        payload.put("exp", expires);
+        payload.put("iat", LocalDateTime.now().toEpochSecond(ZoneOffset.UTC));
+        payload.put("iss", ISSUER);
+        payload.put("jti", UUID.randomUUID().toString()); //how do we use this?
+        signature = hmacSha256(encodedHeader + "." + encode(payload), SECRET_KEY);
+    }
+
+    /**
+     * For verification
+     *
+     * @param token
+     * @throws java.security.NoSuchAlgorithmException
+     */
+    public JWT(String token) throws NoSuchAlgorithmException, ParseException {
+        this();
+        String[] parts = token.split("\\.");
+        if (parts.length != 3) {
+            throw new IllegalArgumentException("Invalid Token format");
+        }
+        if (encodedHeader.equals(parts[0])) {
+            encodedHeader = parts[0];
+        } else {
+            throw new NoSuchAlgorithmException("JWT Header is Incorrect: " + parts[0]);
+        }
+
+        payload = new JSONObject();
+        payload = (JSONObject)parser.parse(decode(parts[1]));
+        if (payload.isEmpty()) {
+            logger.error("Payload is Empty: ");
+        }
+        if (!payload.containsKey("exp")) {
+            logger.error("Payload doesn't contain expiry " + payload);
+        }
+        signature = parts[2];
+    }
+
+    @Override
+    public String toString() {
+        return encodedHeader + "." + encode(payload) + "." + signature;
+    }
+
+    public boolean isValid() {
+        return (long)payload.get("exp") > (LocalDateTime.now().toEpochSecond(ZoneOffset.UTC)) //token not expired
+                && signature.equals(hmacSha256(encodedHeader + "." + encode(payload), SECRET_KEY)); //signature matched
+    }
+
+    public String getSubject() {
+        return payload.get("sub").toString();
+    }
+
+    public List<String> getAudience() {
+        JSONArray arr = (JSONArray)payload.get("aud");
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < arr.size(); i++) {
+            list.add(arr.get(i).toString());
+        }
+        return list;
+    }
+
+    private static String encode(JSONObject obj) {
+        return encode(obj.toString().getBytes(StandardCharsets.UTF_8));
+    }
+
+    private static String encode(byte[] bytes) {
+        return Base64.getUrlEncoder().withoutPadding().encodeToString(bytes);
+    }
+
+    private static String decode(String encodedString) {
+        return new String(Base64.getUrlDecoder().decode(encodedString));
+    }
+
+    /**
+     * Sign with HMAC SHA256 (HS256)
+     *
+     * @param data
+     * @return
+     * @throws Exception
+     */
+    private String hmacSha256(String data, String secret) {
+        try {
+
+            //MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hash = secret.getBytes(StandardCharsets.UTF_8);//digest.digest(secret.getBytes(StandardCharsets.UTF_8));
+
+            Mac sha256Hmac = Mac.getInstance("HmacSHA256");
+            SecretKeySpec secretKey = new SecretKeySpec(hash, "HmacSHA256");
+            sha256Hmac.init(secretKey);
+
+            byte[] signedBytes = sha256Hmac.doFinal(data.getBytes(StandardCharsets.UTF_8));
+            return encode(signedBytes);
+        } catch (NoSuchAlgorithmException | InvalidKeyException ex) {
+            Logger.getLogger(JWT.class.getName()).log(Level.SEVERE, ex.getMessage(), ex);
+            return null;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+{
+	"VALIDATION::__COMMON__::__FIELD_LIST__" : [ "first_name", "middle_name", "last_name", "mobile_number", "email", "postal_address" ],
+
+
+	"VALIDATION::__COMMON__::__FIELD__::first_name::type" : "text",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::default" : "Mark",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::min_length" : "1",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::max_length" : "100",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::place_holder" : "Enter the first name",
+
+	"VALIDATION::__COMMON__::__FIELD__::first_name::__RULE_LIST__" : ["r.01", "r.02"],
+	"VALIDATION::__COMMON__::__FIELD__::first_name::__RULE__::r.01::validate" : "notEmpty",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::__RULE__::r.01::error_code" : "firstName_EC_NE",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::__RULE__::r.01::help_code" : "firstName_EH_NE",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::__RULE__::r.02::validate" : "isAlphabetic",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::__RULE__::r.02::error_code" : "firstName_EC_IA",
+	"VALIDATION::__COMMON__::__FIELD__::first_name::__RULE__::r.02::help_code" : "firstName_EH_IA",
+
+
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::type" : "text",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::default" : "Alan",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::min_length" : "1",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::max_length" : "100",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::place_holder" : "Enter the middle name",
+
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::__RULE_LIST__" : ["r.01", "r.02"],
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::__RULE__::r.01::validate" : "notEmpty",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::__RULE__::r.01::error_code" : "middleName_EC_NE",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::__RULE__::r.01::help_code" : "middleName_EH_NE",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::__RULE__::r.02::validate" : "isAlphabetic",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::__RULE__::r.02::error_code" : "middleName_EC_IA",
+	"VALIDATION::__COMMON__::__FIELD__::middle_name::__RULE__::r.02::help_code" : "middleName_EH_IA",
+
+
+	"VALIDATION::__COMMON__::__FIELD__::last_name::type" : "text",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::default" : "Henry",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::min_length" : "1",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::max_length" : "100",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::place_holder" : "Enter the last name",
+
+	"VALIDATION::__COMMON__::__FIELD__::last_name::__RULE_LIST__" : ["r.01", "r.02"],
+	"VALIDATION::__COMMON__::__FIELD__::last_name::__RULE__::r.01::validate" : "notEmpty",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::__RULE__::r.01::error_code" : "lastName_EC_NE",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::__RULE__::r.01::help_code" : "lastName_EH_NE",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::__RULE__::r.02::validate" : "isAlphabetic",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::__RULE__::r.02::error_code" : "lastName_EC_IA",
+	"VALIDATION::__COMMON__::__FIELD__::last_name::__RULE__::r.02::help_code" : "lastName_EH_IA",
+
+
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::type" : "text",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::default" : "9980667546",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::min_length" : "10",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::max_length" : "10",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::place_holder" : "Enter the mobile number",
+
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE_LIST__" : ["r.01", "r.02", "r.03"],
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.01::validate" : "notEmpty",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.01::error_code" : "mobileNumber_EC_NE",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.01::help_code" : "mobileNumber_EC_NE",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.02::validate" : "isNumeric",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.02::error_code" : "mobileNumber_EC_IN",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.02::help_code" : "mobileNumber_EH_IN",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.03::validate" : "containsExpectedLength",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.03::error_code" : "mobileNumber_EC_CEL",
+	"VALIDATION::__COMMON__::__FIELD__::mobile_number::__RULE__::r.03::help_code" : "mobileNumber_EH_CEL",
+
+
+	"VALIDATION::__COMMON__::__FIELD__::email::type" : "email",
+	"VALIDATION::__COMMON__::__FIELD__::email::default" : "name@example.com",
+	"VALIDATION::__COMMON__::__FIELD__::email::place_holder" : "Enter the email",
+
+	"VALIDATION::__COMMON__::__FIELD__::email::__RULE_LIST__" : ["r.01"],
+	"VALIDATION::__COMMON__::__FIELD__::email::__RULE__::r.01::validate" : "containsExpectedFormat",
+	"VALIDATION::__COMMON__::__FIELD__::email::__RULE__::r.01::error_code" : "email_EC_CEF",
+	"VALIDATION::__COMMON__::__FIELD__::email::__RULE__::r.01::help_code" : "email_EH_CEF",
+
+
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::type" : "textarea",
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::default" : "abc house, def post, ghi city, jkl state, mno country, pincode",
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::min_length" : "1",
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::max_length" : "100",
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::place_holder" : "Enter the postal address",
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::__RULE_LIST__" : ["r.01"],
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::__RULE__::r.01::validate" : "notEmpty" ,
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::__RULE__::r.01::error_code" : "postalAddress_EC_NE",
+	"VALIDATION::__COMMON__::__FIELD__::postal_address::__RULE__::r.01::help_code" : "postalAddress_EH_NE",
+
+
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD_LIST__" : [ "first_name", "mobile_number", "email" ],
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD_LIST__::__MANDATORY__" : [ "first_name", "mobile_number" ],
+	
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD__::first_name::type" : "text",
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD__::first_name::__RULE_LIST__" : ["r.01", "r.02"],
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD__::first_name::__RULE_LIST__::skip" : [],
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD__::first_name::__RULE_LIST__::add" : ["r.03"],
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD__::first_name::__RULE_LIST__::modify" : [],
+
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD__::first_name::__RULE__::r.03::validate" : "containsExpectedLength",
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD__::first_name::__RULE__::r.03::error_code" : "firstName_EC_CEL",
+	"VALIDATION::__COMMON__::__FORM__::F1::__FIELD__::first_name::__RULE__::r.03::help_code" : "firstName_EH_CEL",
+
+
+	"VALIDATION::__COMMON__::__FORM__::F2::__FIELD_LIST__" : [ "first_name", "middle_name", "last_name" ],
+  	"VALIDATION::__COMMON__::__FORM__::F2::__FIELD_LIST__::__MANDATORY__" : [ "first_name", "last_name" ]	,
+
+	
+	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD_LIST__" : [ "first_name", "mobile_number", "email", "postal_address" ],
+  	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD_LIST__::__MANDATORY__" : [ "first_name", "mobile_number", "postal_address" ],
+
+	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD__::postal_address::__RULE_LIST__" : ["r.01", "r.02"],
+	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD__::postal_address::__RULE_LIST__::skip" : [],
+	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD__::postal_address::__RULE_LIST__::add" : ["r.02"],
+	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD__::postal_address::__RULE_LIST__::modify" : [],
+
+	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD__::postal_address::__RULE__::r.02::validate" : "isWithinMaxLength",
+	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD__::postal_address::__RULE__::r.02::error_code" : "postalAddress_EC_IWML",
+	"VALIDATION::__COMMON__::__FORM__::F3::__FIELD__::postal_address::__RULE__::r.02::help_code" : "postalAddress_EH_IWML"
+	
+}

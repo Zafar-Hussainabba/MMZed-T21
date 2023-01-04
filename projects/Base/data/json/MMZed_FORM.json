@@ -1,0 +1,27 @@
+{
+	"__FORM__" : {
+        "__STATE__" : "",
+        "__MODE__" : "",
+        "__STATUS__" : "",
+        "__NAME__" : "",
+        "__ACCESSORS__" : {
+            "__SYSTEM__" : "",
+            "__USER__" : ""
+        },
+        "__HTML_HEADER__" : "",
+        "__CSS__" : "",
+        "__AUTHENTICATE_Y_N__" : "",
+        "__DEFAULT_CSS__" : "",
+        "__DATA__" : "",
+        "__PORT__" : "",
+        "__PORT_URL__" : "",
+        "__EXIT_ON_SINGLE_ERROR__" : "",
+        "__ERROR_CODES__" : "",
+        "--all the global attributes can be customized here--" : "",
+        "__LOGGER_AUDIT__" : "",
+        "__LOGGER_REPORT__" : "",
+        "__LOGGER_ERROR__" : "",
+        "__LOGGER_NORMAL__" : "",
+        "__LOG_ENTRY_IDENTIFIER__" : ""
+    }
+}

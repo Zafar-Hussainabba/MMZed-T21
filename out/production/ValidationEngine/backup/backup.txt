@@ -1,0 +1,231 @@
+public class FormValidator.Validator
+{
+    public static final Logger logger = LogManager.getLogger( FormValidator.Validator.class );
+
+    //Specifying hashmap that stores validation data
+    private static HashMap<String, String> patternMap = new HashMap<>();
+
+    //Method to get pattern map.
+    public static HashMap<String, String> getPatternMap() {
+        return patternMap;
+    }
+
+    //Method to set pattern map.
+    public static void setPatternMap(HashMap<String, String> patternMap) {
+        FormValidator.Validator.patternMap = patternMap;
+    }
+
+    //Method to check whether the given pattern name exists in the map
+    public static Boolean isKeyExist(String patternName)
+    {
+        //Returning the boolean condition of exists status of the pattern name.
+        return patternMap.containsKey(patternName);
+    }
+
+    //Method to add new pattern to the Map
+    public static void addPattern(String patternName, String pattern)
+    {
+        logger.trace("Method to add new pattern to the pattern map called...");
+        //Checking whether the pattern name exists in the map.
+        logger.trace("Checking whether the pattern name exists in the map...");
+        if(!isKeyExist(patternName))
+        {
+            //Adding new pattern to the map.
+            logger.trace("Adding new pattern to the map...");
+            patternMap.put(patternName, pattern);
+            logger.info("Newly added pattern name is : [ " + patternName + " ] and the pattern is : [ " + patternMap.get(patternName) + " ] ");
+            //Printing pattern map key-values after adding new pair.
+            logger.trace("Printing pattern map key-values after adding new pair...");
+            showPatternMapData();
+        }
+        else
+            logger.error("Pattern name [ " + patternName + " ] already exists!!!");
+    }
+
+    //Method to delete specified pattern.
+    public static void deletePattern(String patternName)
+    {
+        logger.trace("Method to delete pattern from the pattern map called...");
+        //Checking whether the pattern name exists in the map.
+        logger.trace("Checking whether the pattern name exists in the map...");
+        if(!isKeyExist(patternName))
+            logger.error("Pattern name [ " + patternName + " ] not found!!!");
+        else
+        {
+            //Deleting the specified pattern name
+            logger.trace("Deleting the specified pattern name...");
+            String pattern = patternMap.get(patternName);
+            patternMap.remove(patternName);
+            logger.info("The deleted pattern name is : [ " + patternName + " ] and the pattern is : [ " + pattern + " ] ");
+            //Printing pattern map key-values after deleting a pair.
+            logger.trace("Printing pattern map key-values after after deleting a pair...");
+            showPatternMapData();
+        }
+    }
+
+    //Method to update specified pattern
+    public static void updatePattern(String patternName, String newPattern)
+    {
+        logger.trace("Method to update a pattern in pattern map called...");
+        //Checking whether the pattern name exists in the map.
+        logger.trace("Checking whether the pattern name exists in the map...");
+        if(!isKeyExist(patternName))
+            logger.error("Pattern name [ " + patternName + " ] not found!!!");
+        else
+        {
+            //Updating the pattern.
+            logger.trace("Updating the pattern...");
+            patternMap.replace(patternName, newPattern);
+            logger.info("After updating, pattern name is : [ " + patternName + " ] and the pattern is [ " + patternMap.get(patternName) + " ] ");
+            logger.trace("Printing pattern map, key-values after updating...");
+            showPatternMapData();
+        }
+    }
+
+    //Method to print pattern map data.
+    private static void showPatternMapData()
+    {
+        //Printing pattern map, key-values.
+        logger.trace("Printing pattern map, key-values...");
+        for(Map.Entry<String, String> mapElement : patternMap.entrySet())
+        {
+            String collectionKey = mapElement.getKey();
+            String collectionValue = mapElement.getValue();
+            logger.info("Key : [ " + collectionKey + " ] Value : [ " + collectionValue + " ] ");
+        }
+    }
+
+
+    //Method to trim leading and trailing spaces of pattern
+    public static String allTrim(String validationString)
+    {
+        //Printing the string to be trimmed for deleting and trailing spaces
+        logger.trace("Printing the String to be trimmed for deleting and trailing spaces...");
+        logger.info("String to be trimmed is : [ " + validationString + " ] ");
+
+        //Trimming the given string to delete leading and trailing spaces
+        logger.trace("Trimming the given string to delete leading and trailing spaces...");
+        validationString.trim();
+
+        //Printing string after trimming
+        logger.trace("Printing string after trimming...");
+        logger.info("String after trimming is : [ " + validationString + " ] ");
+
+        //Returning the trimmed string
+        logger.trace("Returning the trimmed string...");
+        return validationString;
+    }
+
+    public static Integer checkLength(String validationString)
+    {
+        //Printing the string given to check for length.
+        logger.trace("Printing the string given to check for length...");
+        logger.info("String given to check for length is : [ " + validationString + " ] ");
+
+        //Printing the length of the given string.
+        logger.trace("Printing the length of the given string...");
+        logger.info("Length of the string [ " + validationString + " ] is : [ " + validationString.length() + " ] ");
+
+        //Returning the length of the given string.
+        return validationString.length();
+    }
+
+    public static void validate(HashMap<String, ArrayList<String>> stringMap)
+    {
+        //Specifying a map to store validation result.
+        HashMap<String, HashMap<String, String>> validationResultData = new HashMap<>();
+
+        //Specifying array list to store all the pattern specified for a string.
+        ArrayList<String> patternNames = new ArrayList<>();
+
+        for(Map.Entry<String, ArrayList<String>> mapElement : stringMap.entrySet())
+        {
+            //Storing key in a variable
+            String stringToValidate = mapElement.getKey();
+            //Trimming leading and trailing spaces of the string
+            allTrim(stringToValidate);
+            //Checking length of the string
+            checkLength(stringToValidate);
+
+            logger.trace("Printing the patterns specified for the string to be validated...");
+            patternNames = mapElement.getValue();
+            logger.info("String is : [ " + stringToValidate + " ] ");
+            logger.info("Keys are : ");
+            for (String patternName : patternNames) {
+                logger.info(" [ " +  patternName + " ] ");
+            }
+
+            //Validating string for a give pattern.
+            logger.trace("Validating string for a give pattern...");
+            for (String patternName : patternNames) {
+                if(!isKeyExist(patternName))
+                {
+                    logger.error("Pattern name not found!");
+                }
+                else
+                {
+                    //Creating pattern object.
+                    logger.trace("Creating pattern object...");
+                    Pattern patternObject = Pattern.compile(patternMap.get(patternName));
+                    logger.trace("Pattern object created.");
+
+                    //Creating matcher object.
+                    logger.trace("Creating matcher object...");
+                    Matcher matcherObject = patternObject.matcher(stringToValidate);
+                    logger.trace("Matcher object created...");
+                    if (matcherObject.matches())
+                    {
+                        //Storing validation result in a variable
+                        validationResultData = getResult(stringToValidate, patternName, "true");
+                    }
+                    else
+                    {
+                        //Storing validation result in a variable
+                        validationResultData = getResult(stringToValidate, patternName, "false");
+                    }
+                    //Displaying the validation result data
+                    showValidationResult(validationResultData);
+                }
+            }
+        }
+    }
+
+    //Method to Store Validation result in a map
+    public static HashMap<String, HashMap<String, String>> getResult (String validateString, String patternName, String validationResult)
+    {
+        //Creating hashmap to store the patter name and corresponding result.
+        HashMap<String, String> patternAndResult = new HashMap<>();
+        patternAndResult.put(patternName, validationResult);
+
+        //Storing the string given to validate and its result data in hashmap.
+        HashMap<String, HashMap<String, String>> validationResultData = new HashMap<>();
+        validationResultData.put(validateString, patternAndResult);
+
+        return validationResultData;
+    }
+
+    //Method to display the Validation result.
+    public static void showValidationResult(HashMap<String, HashMap<String , String>> validationResultData)
+    {
+        logger.trace("Printing validation result data...");
+        for(Map.Entry<String, HashMap<String, String>> mapElement : validationResultData.entrySet())
+        {
+            //Storing validate string in variable
+            String validateString = mapElement.getKey();
+            //Storing pattern and its corresponding result in map
+            HashMap<String, String> patternAndResult = new HashMap<>();
+            patternAndResult = mapElement.getValue();
+            logger.info("Validation result for string : [ " + validateString  + " ] ");
+            for(Map.Entry<String, String> patternAndResultElement : patternAndResult.entrySet())
+            {
+                String patternName = patternAndResultElement.getKey();
+                String patternResult = patternAndResultElement.getValue();
+                logger.info("Pattern name is : [ " + patternName + " ] and result is : [ " + patternResult + " ] ");
+            }
+        }
+    }
+
+    public static void main(String[] args)
+    {
+    }
+}

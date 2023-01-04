@@ -1,0 +1,338 @@
+{
+  "__TEST_CASE" : {
+    "__FORM__" : {
+      "NOT_EMPTY_RULE" : {
+        "notEmpty": {
+          "__SUNNY__": {
+            "__EXIST_TESTCASE__": {
+              "TCS_S_NE.001": 0,
+              "TCS_S_NE.002": 0,
+              "TCS_S_NE.003": 0
+            },
+            "__SKIP_TESTCASE__": {
+              "TCS_S_NE.001": "false",
+              "TCS_S_NE.002": "false",
+              "TCS_S_NE.003": "false"
+            },
+            "__EXECUTE_SEQUENCE__": [
+              "TCS_S_NE.001",
+              "TCS_S_NE.003",
+              "TCS_S_NE.002"
+            ],
+            "TCS_S_NE.001": {
+              "pattern": "aaa",
+              "description": "testing for not empty condition",
+              "expected_outcome": {
+                "success_code": "TCS_SS_NE.001"
+              }
+            },
+            "TCS_S_NE.002": {
+              "pattern": "123",
+              "description": "testing for not empty condition",
+              "expected_outcome": {
+                "success_code": "TCS_SS_NE.002"
+              }
+            },
+            "TCS_S_NE.003": {
+              "pattern": "abc123",
+              "description": "testing for not empty condition",
+              "expected_outcome": {
+                "success_code": "TCS_SS_NE.003"
+              }
+            }
+          },
+          "__RAINY__": {
+            "__EXIST_TEST_CASE__": {
+              "TCS_R_NE.001": 0
+            },
+            "__SKIP_TEST_CASE__": {
+              "TCS_R_NE.001": "false"
+            },
+            "__EXECUTE_SEQUENCE__": [
+              "TCS_R_NE.001"
+            ],
+            "TCS_R_NE.001": {
+              "pattern": "",
+              "description": "testing for not empty condition",
+              "expected_outcome": {
+                "error_code": "TCS_RE_NE.001",
+                "help_code": "TCS_RE_NE.001"
+              }
+            }
+          }
+        }
+      },
+      "F1" : {
+        "FIELD" : {
+          "__EXIST_FIELD__" : {
+            "FIRST_NAME" : 0,
+            "MOBILE_NUMBER" : 0,
+            "EMAIL" : 0
+          },
+          "FIRST_NAME" : {
+            "__RULE__" : {
+              "__EXIST_RULE__" : {
+                "R.001" : 0,
+                "R.002" : 0
+              },
+              "R.001" : "__NOT_EMPTY_RULE__",
+              "R.002" : {
+                "isAlphabetic" : {
+                  "__SUNNY__" : {
+                    "__EXIST_TEST_CASE__" : {
+                      "TCS_S_IA.001" : 0,
+                      "TCS_S_IA.002" : 0,
+                      "TCS_S_IA.003" : 0
+                    },
+                    "__SKIP_TEST_CASE__" : {
+                      "TCS_S_IA.001" : "false",
+                      "TCS_S_IA.002" : "false",
+                      "TCS_S_IA.003" : "false"
+                    },
+                    "__EXECUTE_SEQUENCE__" : [ "TCS_S_IA.001", "TCS_S_IA.002", "TCS_S_IA.003"],
+                    "TCS_S_IA.001" : {
+                      "pattern" : "abc",
+                      "description" : "testing for isAlphabetic condition",
+                      "expected_outcome" : {
+                        "success_code" : "TCS_SS_IA.001"
+                      }
+                    },
+                    "TCS_S_IA.002" : {
+                      "pattern" : "abcdefg",
+                      "description" : "testing for isAlphabetic condition",
+                      "expected_outcome" : {
+                        "success_code" : "TCS_SS_IA.002"
+                      }
+                    },
+                    "TCS_S_IA.003" : {
+                      "pattern" : "abcdefg",
+                      "description" : "testing for isAlphabetic condition",
+                      "expected_outcome" : {
+                        "success_code" : "TCS_SS_IA.003"
+                      }
+                    }
+                  },
+                  "__RAINY__" : {
+                    "__EXIST_TEST_CASE__" : {
+                      "TCS_R_IA.001" : 0,
+                      "TCS_R_IA.002" : 0
+                    },
+                    "__SKIP_TEST_CASE__" : {
+                      "TCS_R_IA.001" : "false",
+                      "TCS_R_IA.002" : "false"
+                    },
+                    "__EXECUTE_SEQUENCE__" : [ "TCS_R_IA.001", "TCS_R_IA.002"],
+                    "TCS_R_IA.001" : {
+                      "pattern" : "123",
+                      "description" : "testing for isAlphabetic condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_R_isAlphabetic.001",
+                        "help_code" : "TCS_R_isAlphabetic.001"
+                      }
+                    },
+                    "TCS_R_IA.002" : {
+                      "pattern" : "3u87io",
+                      "description" : "testing for isAlphabetic condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_R_isAlphabetic.002",
+                        "help_code" : "TCS_R_isAlphabetic.002"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "MOBILE_NUMBER" : {
+            "__RULE__" : {
+              "__EXIST_RULE__" : {
+                "R.001" : 0,
+                "R.002" : 0,
+                "R.003" : 0
+              },
+              "R.001" : "__NOT_EMPTY_RULE__",
+              "R.002" : {
+                "isNumeric" : {
+                  "__SUNNY__" : {
+                    "__EXIST_TEST_CASE__" : {
+                      "TCS_S_IN.001" : 0,
+                      "TCS_S_IN.002" : 0,
+                      "TCS_S_IN.003" : 0
+                    },
+                    "__SKIP_TEST_CASE__" : {
+                      "TCS_S_IN.001" : "false",
+                      "TCS_S_IN.002" : "true",
+                      "TCS_S_IN.003" : "false"
+                    },
+                    "__EXECUTE_SEQUENCE__" : [ "TCS_S_IN.002", "TCS_S_IN.003", "TCS_S_IN.001"],
+                    "TCS_S_IN.001" : {
+                      "pattern" : "123",
+                      "description" : "testing for isNumeric condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_SE_IN.001",
+                        "help_code" : "TCS_SH_IN.001"
+                      }
+                    },
+                    "TCS_S_IN.002" : {
+                      "pattern" : "123456",
+                      "description" : "testing for isNumeric condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_SE_IN.002",
+                        "help_code" : "TCS_SH_IN.002"
+                      }
+                    },
+                    "TCS_S_IN.003" : {
+                      "pattern" : "01234",
+                      "description" : "testing for isNumeric condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_SE_IN.003",
+                        "help_code" : "TCS_SH_IN.003"
+                      }
+                    }
+                  },
+                  "__RAINY__" : {
+                    "__EXIST_TEST_CASE__" : {
+                      "TCS_R_IN.001" : 0,
+                      "TCS_R_IN.002" : 0
+                    },
+                    "__SKIP_TEST_CASE__" : {
+                      "TCS_R_IN.001" : "false",
+                      "TCS_R_IN.002" : "true"
+                    },
+                    "__EXECUTE_SEQUENCE__" : [ "TCS_R_IN.001", "TCS_R_IN.002"],
+                    "TCS_R_IN.001" : {
+                      "pattern" : "1ss34",
+                      "description" : "testing for isNumeric condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_RE_IN.001",
+                        "help_code" : "TCS_RH_IN.001"
+                      }
+                    },
+                    "TCS_R_IN.002" : {
+                      "pattern" : "3u87io",
+                      "description" : "testing for isNumeric condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_RE_IN.001",
+                        "help_code" : "TCS_RH_IN.001"
+                      }
+                    }
+                  }
+                }
+              },
+              "R.003" : {
+                "containsExpectedLength" : {
+                  "__SUNNY__" : {
+                    "__EXIST_TEST_CASE__" : {
+                      "TCS_S_CEL.001" : 0
+                    },
+                    "__SKIP_TEST_CASE__" : {
+                      "TCS_S_CEL.001" : "false"
+                    },
+                    "__EXECUTE_SEQUENCE__" : [ "TCS_S_CEL.001" ],
+                    "TCS_S_CEL.001" : {
+                      "pattern" : "1234567890",
+                      "description" : "testing for containsExpectedLength condition",
+                      "expected_outcome" : {
+                        "success_code" : "TCS_SS_CEL.001"
+                      }
+                    }
+                  },
+                  "__RAINY__" : {
+                    "__EXIST_TEST_CASE__" : {
+                      "TCS_R_CEL.001" : 0,
+                      "TCS_R_CEL.002" : 0
+                    },
+                    "__SKIP_TEST_CASE__" : {
+                      "TCS_R_CEL.001" : "true",
+                      "TCS_R_CEL.002" : "false"
+                    },
+                    "__EXECUTE_SEQUENCE__" : [ "TCS_R_CEL.001", "TCS_R_CEL.002" ],
+                    "TCS_R_CEL.001" : {
+                      "pattern" : "12345",
+                      "description" : "testing for containsExpectedLength condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_RE_CEL.001",
+                        "help_code" : "TCS_RH_CEL.001"
+                      }
+                    },
+                    "TCS_R_CEL.002" : {
+                      "pattern" : "1234567890123",
+                      "description" : "testing for containsExpectedLength condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_RE_CEL.002",
+                        "help_code" : "TCS_RH_CEL.002"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "EMAIL" : {
+            "__RULE__" : {
+              "__EXIST_RULE__" : {
+                "R.001" : 0
+              },
+              "R.001" : {
+                "containsExpectedFormat" : {
+                  "__SUNNY__" : {
+                    "__EXIST_TEST_CASE__" : {
+                      "TCS_S_CEF.001" : 0,
+                      "TCS_S_CEF.002" : 0
+                    },
+                    "__SKIP_TEST_CASE__" : {
+                      "TCS_S_CEF.001" : "false",
+                      "TCS_S_CEF.002" : "false"
+                    },
+                    "__EXECUTE_SEQUENCE__" : [ "TCS_S_CEF.001", "TCS_S_CEF.002"],
+                    "TCS_S_CEF.001" : {
+                      "pattern" : "name@example.com",
+                      "description" : "testing for containsExpectedFormat condition",
+                      "expected_outcome" : {
+                        "success_code" : "TCS_SS_CEF.001"
+                      }
+                    },
+                    "TCS_S_CEF.002" : {
+                      "pattern" : "zafar@example.com",
+                      "description" : "testing for containsExpectedFormat condition",
+                      "expected_outcome" : {
+                        "success_code" : "TCS_SS_CEF.002"
+                      }
+                    }
+                  },
+                  "__RAINY__" : {
+                    "__EXIST_TEST_CASE__" : {
+                      "TCS_R_CEF.001" : 0,
+                      "TCS_R_CEF.002" : 0
+                    },
+                    "__SKIP_TEST_CASE__" : {
+                      "TCS_R_CEF.001" : "false",
+                      "TCS_R_CEF.002" : "false"
+                    },
+                    "__EXECUTE_SEQUENCE__" : [ "TCS_R_CEF.001", "TCS_R_CEF.002"],
+                    "TCS_R_CEF.001" : {
+                      "pattern" : "@gmail.com",
+                      "description" : "testing for containsExpectedLength condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_RE_CEF.001",
+                        "help_code" : "TCS_RH_CEF.001"
+                      }
+                    },
+                    "TCS_R_CEF.002" : {
+                      "pattern" : "234@##.##$com",
+                      "description" : "testing for containsExpectedFormat condition",
+                      "expected_outcome" : {
+                        "error_code" : "TCS_RE_CEF.002",
+                        "help_code" : "TCS_RH_CEF.002"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

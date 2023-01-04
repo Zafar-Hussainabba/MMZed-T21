@@ -1,0 +1,14 @@
+[15 May 2021 18:51:41,654] [main] INFO  code.src.HttpRequest.HttpRequest  - JSON String Result {  "userId": 1,  "id": 1,  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"}
+[15 May 2021 18:52:52,333] [main] INFO  code.src.HttpRequest.HttpRequest  - POST Response Code :  201
+[15 May 2021 18:52:52,334] [main] INFO  code.src.HttpRequest.HttpRequest  - POST Response Message : Created
+[15 May 2021 18:52:52,335] [main] INFO  code.src.HttpRequest.HttpRequest  - {  "userId": 101,  "id": 101,  "title": "Test Title",  "body": "Test Body"}
+[15 May 2021 20:02:11,719] [main] INFO  code.src.HttpRequest.HttpRequest  - {
+"userId": 101,
+    "id": 101,
+    "title": "Test Title",
+    "val": "tt Title",
+    "body": "Test Body"
+}
+[15 May 2021 20:02:14,715] [main] INFO  code.src.HttpRequest.HttpRequest  - POST Response Code :  201
+[15 May 2021 20:02:14,715] [main] INFO  code.src.HttpRequest.HttpRequest  - POST Response Message : Created
+[15 May 2021 20:02:14,716] [main] INFO  code.src.HttpRequest.HttpRequest  - {  "userId": 101,  "id": 101,  "title": "Test Title",  "val": "tt Title",  "body": "Test Body"}

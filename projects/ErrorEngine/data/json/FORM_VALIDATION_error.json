@@ -1,0 +1,115 @@
+{
+    "__def.01__" : "Should not be empty",
+    "firstName.100.01" : {
+        "system" : {
+            "__key_sequence__" : ["s.01", "s.02"],
+            "s.01" : {
+                "__messages__" : {
+                    "default" : "Should not be empty"
+                },
+                "__substitute_string__" : {
+                    "__firstName__" : "First Name"
+                }
+            },
+            "s.02" : {
+                "__messages__" : {
+                    "default" : "Should only contain alphabets",
+                    "custom" : "__fistName__ should only contain alphabets"
+                },
+                "__substitute_string__" : {
+                    "__firstName__" : "First Name"
+                }
+            },
+        },
+        "user" : {
+            "__default_substitute_string__" : "",
+            "__key_sequence__" : ["u.01", "u.02"],
+            "u.01" : {
+                "__messages__" : {
+                    "default_message" : "Field should not be empty",
+                    "custom_message" : "__fistName__ field should not be empty"
+                },
+                "__substitute_string__" : {
+                    "__firstName__" : "First Name"
+                }
+            },
+            "u.02" : {
+                "__messages__" : {
+                    "default_message" : "Field should only contain alphabets",
+                    "custom_message" : "__fistName__ field should only contain alphabets"
+                },
+                "__substitute_string__" : {
+                    "__firstName__" : "First Name"
+                }
+            }
+        }
+        
+    },
+    "mobileNumber.100.01" : {
+        "__default_substitute_string__" : "",
+        "system" : {
+            "__default_substitute_string__" : "",
+            "__key_sequence__" : ["s.01", "s.02"],
+            "s.01" : {
+                "__messages__" : {
+                    "default_message" : "Should not be empty",
+                    "custom_message" : "__mobileNumber__ should not be empty"
+                },
+                "__substitute_string__" : {
+                    "__mobileNumber__" : "Mobile Number"
+                }
+            },
+            "s.02" : {
+                "__messages__" : {
+                    "default_message" : "Should contain specified length of characters",
+                    "custom_message" : "__mobileNumber__ should only contain maximum __length__ digits"
+                },
+                "__substitute_string__" : {
+                    "__mobileNumber__" : "Mobile Number",
+                    "__length__" : "10"
+                }
+            }
+        },
+        "user" : {
+            "__default_substitute_string__" : "",
+            "__key_sequence__" : ["u.01"],
+            "u.01" : {
+                "__messages__" : {
+                    "default_message" : "Field should not be empty",
+                    "custom_message" : "__mobileNumber__ field should not be empty"
+                },
+                "__substitute_string__" : {
+                    "__mobileNumber__" : "Mobile Number"
+                }
+            }
+        }
+        
+    },
+    "email.100.01" : {
+        "__default_substitute_string__" : "",
+        "system" : {
+            "__default_substitute_string__" : "Unknown system error occured!!!",
+            "__key_sequence__" : ["s.01"],
+            "s.01" : {
+                "__messages__" : {
+                    "default_message" : "Should be in email format",
+                    "custom_message" : "__emil__ should be in __mail_format__ format"
+                },
+                "__substitute_string__" : {
+                    "__email__" : "Email",
+                    "__mail_format__" : "name@example.com"
+                }
+            }
+        }
+    },
+    "substitution_string.100.01" : {
+        "__default_substitute_string__" : "",
+        "system" : {
+            "__default_substitute_string__" : "Unknown system error occured!!!",
+            "__key_sequence__" : ["s.01"],
+            "s.01" : {
+                "__message__" : "Substtute stirng not found!!!",
+            }
+        }
+    }
+}

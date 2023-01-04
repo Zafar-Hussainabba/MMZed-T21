@@ -1,0 +1,14 @@
+{
+	"input" : {
+
+	},
+	"output" : {
+
+	},
+	"status" : {
+		"success" : "",
+		"fail" : {
+			"err_code" : ""
+		}
+	} 	
+}

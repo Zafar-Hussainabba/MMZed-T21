@@ -1,0 +1,6 @@
+{
+  "iss" : "zafar.metamug.net",
+  "sub" : "zafar",
+  "eat" : 9,
+  "aud" : ["admin"]
+}

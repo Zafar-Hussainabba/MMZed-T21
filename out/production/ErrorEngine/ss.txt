@@ -1,0 +1,50 @@
+{
+	"MMZed" : {
+		"__SYSTEM__" :  {
+			"__GLOBAL_FINAL_ATTRIBUTES__": {
+				"__STATE__" :  " ",
+				"__ GLOBALERRORCODE__" : " ",
+				"__PWD__": " ",
+				"__MODE__": " ",
+				"FILENAME" : " "
+			}
+			"__DEFAULT_ATTRIBUTES__" :  {
+				"__STATE__" :  " ",
+				"__ GLOBALERRORCODE__" : " ",
+				"__PWD__": " ",
+				"__MODE__": " ",
+				"FILENAME" : " "
+			},
+					
+					"__RUNTIME_ATTRIBUTES__" : {
+"__STATE__" :  " ",
+							"__ GLOBALERRORCODE__" : " ",
+							"__PWD__": " ",
+							"__MODE__": " ",
+							"FILENAME" : " "
+							}
+					"__ENVIRONMENT_ATTRIBUTES__":  {
+ 									     									   }	
+					"__PARAMETER_ATTRIBUTES__": {
+									"__PWD__": " ",
+									"__MODE__": " ",
+						 			"FILENAME" : " ",
+									},
+					"__CONFIG_FILE_ATTRIBUTES__":{
+									"__PWD__": " ",
+									"__MODE__": " ",
+						 			"FILENAME" : " ",
+									}
+				},
+"__APPLICATION__": " ",
+"__API__": " ",
+"__FORMS__": " ",
+"__VALIDATION__":" ",
+"__ERROR__": " ",
+"__SUCCESS__": " ",
+"__NOTIFICATIONS__":   " ",
+}
+
+}
+
+

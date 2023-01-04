@@ -1,0 +1,115 @@
+{
+		"__common__" : {
+		
+		}, 
+		"__default_substitute_string__" : "",
+		"firstname.ts01.tchks01" : { 
+			"__default_substitute_string__" : "",
+			"system" : {
+				"__default_substitute_string__" : "",
+				"__key_sequence__" : ["s.01", "s.02"],
+				"s.01" : {
+					"__messages__" : {
+						"default" : "Test for firstname not empty condition in sunny scenario failed",
+						"custom" : ""
+					},
+					"__substitute_string__" : {
+					
+					}
+				},
+				"s.02" : {
+					"__messages__" : {
+						"default" : "Sunny scenario for test case - firstname not empty, Failed!!!",
+						"custom" : ""
+					},
+					"__substitute_string__" : {
+					
+					}
+				}
+			},
+			"user" : {
+				"__default_substitute_string__" : "",
+				"__key_sequence__" : ["u.01", "u.02"],
+				"u.01" : {
+					"__messages__" : {
+						"default_message" : "Test for not empty condition failed for firstname in sunny scenario!!!",
+						"custom_message" : ""
+					},
+					"__substitute_string__" : {
+					
+					}
+				}
+			}
+			
+		},
+		"firstname.ts02.tchks02" : "sunny - isAlphabetic condition",
+		"firstname.tr02.tchkr01" : "rainy - notEmpty",
+		"firstname.tr03.tchkr01" : "rainy - isAlphabetic",
+		"firstname.tr03.tchkr02" : "rainy - isAlphabetic2",
+		"firstname.tr03.tchkr03" : "rainy - isAlphabetic3",
+		"mobileNumber.100.01" : { 
+			"__default_substitute_string__" : "",
+			"system" : {
+				"__default_substitute_string__" : "",
+				"__key_sequence__" : ["s.01", "s.02"],
+				"s.01" : {
+					"__messages__" : {
+						"default_message" : "Field is empty!!!",
+						"custom_message" : ""
+					},
+					"__substitute_string__" : {
+					}
+				}
+			},
+			"user" : {
+				"__default_substitute_string__" : "",
+				"__key_sequence__" : ["u.01"],
+				"u.01" : {
+					"__messages__" : {
+						"default_message" : "Field should not be empty!!!",
+						"custom_message" : ""
+					},
+					"__substitute_string__" : {
+					}
+				}
+			}
+			
+		},
+		"mobileNumber.ts02.tchks01" : "sunny - isNumeric",
+		"mobileNumber.ts03.tchks01" : "sunny - containsExpectedLength",
+		"mobileNumber.tr02.tchks01" : "rainy - isNumeric",
+		"mobileNumber.tr02.tchkr02" : "rainy - isNumeric2",
+		"mobileNumber.tr02.tchkr03" : "rainy - isNumeric3",
+		"mobileNumber.tr03.tchkr01" : "rainy - containsExpectedLength",
+		"mobileNumber.tr03.tchkr02" : "rainy - containsExpectedLength2",
+		"email.100.01" : { 
+			"__default_substitute_string__" : "",
+			"system" : {
+				"__default_substitute_string__" : "Unknown system error occured!!!",
+				"__key_sequence__" : ["s.01"],
+				"s.01" : {
+					"__messages__" : {
+						"default_message" : "Should be in email format!!!",
+						"custom_message" : ""
+					},
+					"__substitute_string__" : {
+					}
+				}
+			}
+		},
+		"email.ts01.tchks02" : "sunny - containsExpectedFormat2",
+		"email.ts01.tchks03" : "sunny - containsExpectedFormat3",
+		"email.tr02.tchkr01" : "rainy - containsExpectedFormat",
+		"email.tr02.tchkr02" : "rainy - containsExpectedFormat2",
+		"email.tr02.tchkr03" : "rainy - containsExpectedFormat3",
+		"substitution_string.100.01" : {
+			"__default_substitute_string__" : "",
+			"system" : {
+				"__default_substitute_string__" : "Unknown system error occured!!!",
+				"__key_sequence__" : ["s.01"],
+				"s.01" : {
+					"__message__" : "Substtute stirng not found!!!",
+				}
+			}
+		}
+}
